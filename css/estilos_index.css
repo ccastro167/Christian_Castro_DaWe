@@ -1,0 +1,203 @@
+/*DEFINIMOS MAIN*/
+/*Contenedor de todas mis secciones*/
+main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+} /*Quiero que mis secciones esten una al lado de la otra*/
+
+/*Para todos los párrafos*/
+p{
+    font-size: 10px;
+    text-align: justify;
+}
+
+
+/*Texto h5*/
+h5{
+    margin: 0%;
+    text-align: center; /*Centramos el texto*/
+}
+
+/*Efectos imágenes*/
+.sobreMi{
+    transition:all 5s ease-in-out;
+}
+.sobreMi >img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.contenedor-recetas{
+    transition:all 5s ease-in-out;
+}
+.contenedor-recetas >article:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.05);
+}
+
+
+/*CONTENEDOR 1ra Section*/
+.infoUsuario{
+    width: 18%;/*Para que se quede pegado al contenedor_recetas*/
+    padding-left: 12%;/*Definimos un padding para la 1ra section*/
+}
+/*Imágenes de mi Section: InfoUsuario*/
+.infoUsuario img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom:15px ;
+}
+/*Parrafos con Padding*/
+.infoUsuario p{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: grey;
+}
+
+/*1er Artículo*/
+/*Defino mi sección que se que quiero que sea en forma de columna*/
+.infoUsuario  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Sirve para alinear flex-items*/
+    /*Majes apuntes: pag.49*/    
+    width: 80%;
+    height: 28%; /*Medida baja para que se una con el otro articulo*/
+}
+/*Titulo con el link SobreMI*/
+.sobremiLink:link, .sobremiLink:visited{
+    color: black;
+    text-decoration:none;   
+}
+.sobremiLink:hover{
+    color: #6FD5CE;
+}
+/*Parrafo Bienvenida*/
+.infoUsuario .sobreMi p:nth-child(3){
+    font-size: 9px;
+    /*Texto 1er articulo separado del 2 articulo */
+    margin: 0;
+    margin-top:15px;
+}
+
+
+/*2do Artículo*/
+.infoUsuario article + article{
+    background-color: #D8D8D8;
+    height: 35%;/*Para rellenar el fondo incluyendo todo el texto*/
+    padding-top:10px
+}
+
+/*3r parrafo del 2do Articulo*/
+.infoUsuario p + p{
+    background: #7ABA96;
+    text-align: center; /*Alinea el texto centrado*/
+    margin: 0%; /*Para que complete todo de verde*/
+    /*Propiedades para rellenar el verde*/
+    padding: 2% 36.8%;    
+    color: black;
+} 
+
+/*Link Apuntame*/
+.infoUsuario p a{
+    text-decoration: none;
+    font-weight: 900;
+}
+.infoUsuario p a:hover{
+    color: white;
+}
+
+
+/*2do Articulo*/
+.infoUsuario .suscribete{
+    margin-top: 7%;
+}
+/*2da Imagen contenedor 1*/
+/*Imagen articulo 2*/
+.infoUsuario article + article > img:nth-child(2){
+    width: 110px;
+    height: 150px;
+    margin: 0;
+}
+
+/*2do CONTENEDOR DE ARTICULOS (recetas)*/
+.contenedor-recetas{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;    
+    width: 65%;  
+}
+/*Creamos la separación entre articulos*/
+.contenedor-recetas article{
+    width: 35%;    
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+
+.contenedor-recetas a:link, a:visited{
+    color: black;
+    text-decoration: none;
+
+}
+
+/*Links de otro color al pasar el mouse*/
+.contenedor-recetas a:hover{
+    color:#DBC496;
+}
+
+
+/*Imagenes*/
+.contenedor-recetas img{
+    width: 280px;
+    height: 170px;
+    border-radius: 5px;
+    border: 2px solid #6FD5CE;
+}
+/*Párrafos*/
+.contenedor-recetas p{
+    font-size: 11px;
+    margin: 0%; /*Ya que me crea un margen de por sí*/
+    margin-top: 2%;
+    text-align: center;
+    color: black;
+}
+/*Para separar mis articulos (distancia)*/
+.contenedor-recetas .separacion_article{
+    margin-bottom: 50px;
+}
+
+/*Parrafos justificados*/
+.contenedor-recetas p + p{
+    text-align: justify;
+}
+
+/*Borde al 2 párrafo*/ 
+.contenedor-recetas article > p:nth-child(3) {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #7ABA96 ; /*Color del borde*/
+    
+}
+/*nth-child(3)
+Sirve para indicar la posicion de mi objeto que 
+quiero aplicar estilos en mi caso es el 3r elemento
+*/
+
+/*Para aplicar un margen por la dereceta de estos 2 articulos*/
+.contenedor-recetas .recetas_selectas{
+    margin: 0;/*Pero antes quito los margenes*/
+    margin-right: 50px;
+}
+
+.contenedor-recetas article > p:nth-child(4) {
+    font-size: 12.5px;
+}
+
+
+

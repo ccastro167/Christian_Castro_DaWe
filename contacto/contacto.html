@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- *****************************************************
+NOMBRE: CHRISTIAN 	
+APELLIDOS: CASTRO DOMINGUEZ
+*********************************************************** -->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/estilos_general.css"/>
+    <link rel="stylesheet" href="../contacto/css/contacto.css" />
+
+    <title>Delicias Kitchen</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="../imagenes/Logo-Delicias.png">
+        </figure>
+    </header>
+    <nav>
+		<ul>
+			<li class="navi"><a  href="../index.html">Inicio</a></li>
+			<li><a href="../sobre_mi/sobre_mi.html">Sobre mí</a></li>
+			<li><a href="../recetas/listado_de_recetas.html">Recetas</a>
+                <ul class="navi2">
+                    <li><a href="https://deliciaskitchen.com/recetas/basicos/" target="blank_">Básicos</a></li>
+                    <li><a href="https://deliciaskitchen.com/recetas/platos-principales/" target="blank_">Platos principales</a></li>
+                    <li><a href="https://deliciaskitchen.com/recetas/sopas-y-cremas/" target="blank_">Sopas y Cremas</a></li>
+                    <li><a href="https://deliciaskitchen.com/recetas/aperitivos-y-entrantes/" target="blank_">Aperitivos y entrantes</a></li>
+                </ul>    
+            </li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="../otras_cosas/otras_cosas.html">Otras cosas</a>
+				<ul class="navi2">
+					<li><a href="https://deliciaskitchen.com/otras-cosas/alimentos/" target="blank_">Alimentos</a></li>
+					<li><a href="https://deliciaskitchen.com/otras-cosas/otros/" target="blank_">Otros</a></li>
+					<li><a href="https://deliciaskitchen.com/otras-cosas/reto-delicias-kitchen/" target="blank_">Reto delicias kitchen</a></li>
+				</ul>
+			</li>			
+		</ul>
+	</nav>
+    <main>
+        <form action="" method="get">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Escribe tu Nombre" autofocus><br>
+
+            <label>Primer Apellido:</label>
+            <input type="text" placeholder="Escribe tu Apellido"><br>
+
+            <label>Segundo Apellido:</label>
+            <input type="text" placeholder="Escribe tu Apellido"><br>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Escribe tu Email"><br>
+
+            <label>Password:</label>
+            <input type="password" placeholder="*********"><br>
+
+            <label>Preferencias:</label><br>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-arroz">Recetas de arroces</label>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-aves" checked>Recetas de aves</label>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-bocadillos">Recetas de bocadillos</label>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-carnes">Recetas de carnes</label>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-pescado">Recetas de pescado</label>
+            <label class="letra_pequeña"><input type="checkbox" name="cb-pastas">Recetas de pastas</label><br>
+
+            <label>Fecha nacimiento</label>
+            <input type="date" name="fechaNacimiento"><br>
+
+            <label class="lista_opciones">País de Nacimiento:<input list="lista" name="Recetas_favoritas" /></label>
+            <datalist id="lista">
+                <option value="España">
+                <option value="Perú">
+                <option value="Argentina">
+                <option value="Chile">
+                <option value="Suecia">
+                <option value="Paraguay">
+                <option value="Colombia">
+                <option value="Otro">
+            </datalist><br>
+            <label class="texto_usuario" for="mensaje">Sugerencias:</label>
+            <textarea name="mensaje" for="mensaje" placeholder="Describa brevemente en menos de 300 carácteres"
+                maxlength="300"></textarea><br>
+            
+                <label>Recibir Publicidad:</label><br>  
+                <label class="letra_pequeña"><input type="radio" name="color" value="rojo" checked>Si</label>
+                <label class="letra_pequeña"><input type="radio" name="color" value="verde" >No</label>
+            
+            <!--<label>Condiciones:</label>-->
+            <label class="importante"><input type="checkbox" name="Terminos" required>He leido y acepto los términos y
+                condiciones de uso</label><br>
+            <span>(*)Aceptar los <a class="aTerms" href="">términos y condiciones </a>de uso</span><br>
+
+            <input type="submit">
+            <input type="reset"><br>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li><img src="../imagenes/png/footer/facebook.png"><a class="foot" href="https://www.facebook.com"
+                    target="_blank">Facebook</a></li>
+            <li><img src="../imagenes/png/footer/twitter.png"><a class="foot" href="https://www.twitter.com"
+                    target="_blank">Twitter</a></li>
+            <li><img src="../imagenes/png/footer/instagram.png"><a class="foot" href="https://www.instagram.com"
+                    target="_blank">Instagram</a></li>
+            <li><img src="../imagenes/png/footer/pinterest.png"><a class="foot" href="https://www.pinterest.com"
+                    target="_blank">Pinterest</a></li>
+            <li><img src="../imagenes/png/footer/mail.png"><a class="foot" href="" target="_blank">Email</a></li>
+            <li><img src="../imagenes/png/footer/rss.png"><a class="foot" href="" target="_blank">RSS</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

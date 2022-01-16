@@ -1,0 +1,254 @@
+/*MAIN*/
+main{    
+    background-color: #D8D8D8;
+    border-radius: 3px;
+    width: 90%; /*Antes: width: 76%;*/
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left: 50px;
+}
+
+/*Titulo y párrafo*/
+h1, p{  
+    margin: 0%;
+}
+p{
+    padding-bottom: 15px;
+}
+
+/*Titulo h1*/
+h1{
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/*Aside*/
+aside ul{
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6FD5CE;    
+    padding-top: 5px ;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 0;
+    margin-bottom: 10px;
+    /*Para que este junto al contenedor de recetas*/
+    width: 100px;       
+    margin-left: 50px;
+}
+aside ul li{
+    list-style: none; /*Quitar los puntos de la lista*/
+}
+/*SUB_MENÚ*/
+.navi3:link, .navi3:visited{ /*Añadiendo a:visited lo pongo el link de color negro*/    
+    text-decoration:none;     
+}
+
+.navi3:hover{
+    color: #6FD5CE;
+    text-decoration: underline;
+}
+aside ul li{
+    font-size: 13px;
+}
+
+/*Cuerpo de mi página*/
+/*CREO UNA SECTION*/
+.contenedor_principal{
+    display: flex;
+    justify-content: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/*Link a la receta*/
+.contenedor_principal article h3 a:link, a:visited{
+    color: black;
+    text-decoration:none;  
+}
+.contenedor_principal article h3 a:hover{
+    color: #6FD5CE;
+}
+
+.contenedor_recetas{
+    width: 70%;
+}
+
+/*Titulos receta*/
+.contenedor_recetas .title1{
+    margin-left: 49.8%;
+}
+.contenedor_recetas .title2{
+    margin-left: 56%;
+}
+.contenedor_recetas .title3{
+    margin-left: 38.3%;
+}
+.contenedor_recetas .title4{
+    margin-left: 42.3%;
+}
+.contenedor_recetas .title5{
+    margin-left: 20.5%;
+}
+
+
+
+
+/*PROPIEDADES H3*/
+main h3{
+    margin:0%;
+    display: inline; /*Para que se alinee con mi texto*/
+    /*Para que no haya salto de línea*/
+    /*padding-right: 200px;*/
+    /*padding-left: 100px;*/
+    font-size: 23px;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Imagen Valoración*/
+span img{
+    width: 17px;
+    height: 17px;
+}
+
+table{
+    /*ANTES: padding-left: 100px;*/
+    border-top: 2px solid black;
+}
+
+/*Imagen plato*/
+table img{
+    width: 150px;
+    height: 150px;
+}
+    
+/*Texto en cursiva*/
+table tr th{
+    font-style: italic;
+    height: 30px; /*Modificamos el tamaño de la fila*/
+    text-align: left;
+}
+
+/*Cuerpo de mi tabla*/
+.middle {
+    display: flex;
+    flex-flow: row wrap;
+    width:540px; /*Para que bajen mis filas*/
+}
+.middle td{
+    padding-right: 18px;/*Espacio entre filas*/
+}
+
+/*Para centrar mi icono con el texto*/
+.middle > td:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+/*Icono temporizador*/
+.middle  img{
+    width: 20px;
+    height: 20px;    
+}
+
+/*Imagenes iconos de abajo*/
+tr + tr  img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*Listado links*/
+.lista_link{
+    margin-left: 55px;
+    background: #BDBDBD;
+    border: 1px solid;
+    border-radius: 3px;
+    height: 160px;
+    margin-top: 10px;
+    position: sticky;
+    top:10%;
+    width: 23%;
+}
+.lista_link ul{
+    padding:15px;
+    margin: 0;
+}
+.lista_link h3{
+    padding:0;
+    font-size: 15px;
+}
+.lista_link img{
+    width: 20px;
+    height: 20px;
+    padding-right: 4px;
+}
+.lista_link li{
+    list-style: none; /*Quitar puntos lista*/
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.lista_link a:visited, a:link{
+    text-decoration: none;
+}
+.lista_link a:hover{
+    background: #6FD5CE;
+}
+
+
+/*PAGINACIÓN*/
+.paginacion {
+	margin:0%;/*20px = top y bottom 0 = rigth y left*/
+    width:100%
+}
+
+.paginacion ul {
+	list-style:none; /*Quitamos puntos de la lista*/
+	text-align: center; /*Centramos el texto*/
+    padding-left: 800px;
+}
+
+.paginacion ul li {
+	display:inline-block;
+    padding:0%;
+    text-transform: none; /*descativo las mayusculas*/
+    padding-bottom: 5px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:5px 10px; /*Antes: padding:10px 20px;*/
+	color:#fff;
+	background:#ACACAC;
+	text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .10s;
+}
+/*Para que cambie de color al pasar el mouse*/
+.paginacion ul li a:hover {
+	background:#6FD5CE;
+}
+
+/**/
+.paginacion ul li .active {
+	background: black; /*Para combiar color cuando esta en la pagina indicada*/
+	font-weight:bold;
+}
+
+/*Pare que se mueva hasta arriba*/
+.paginacion{
+    position: sticky;
+    bottom: 0%;
+}
+
+.paginacion ul{
+    margin-left: 0;
+}

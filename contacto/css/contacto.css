@@ -1,0 +1,99 @@
+
+/*Formulario*/
+form{
+    margin: auto;
+    width: 430px;
+    background: #D8D8D8;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding:16px;
+    padding-right:0;
+}
+form label{
+    width: 200px; /*Para que esten separados del input dicha distancia*/
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500; /*Grosor letra*/
+    display: inline-block; /*Se alineen con el input*/
+}
+/*Propiedades Datalist*/
+form .lista_opciones{
+    display: inline;
+    width: 200px;
+}
+
+form .lista_opciones input{
+    width: 135px;
+    margin-top: 8px;
+    margin-left: 61px;
+    border: 1px solid;
+    border-radius: 3px;
+    
+}
+
+form input[type="text"],
+form input[type="email"], form input[type="password"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+/*Para poner una letra mas pequeña al checbox y al radioButtom*/
+form .letra_pequeña{
+        font-size: 14px;
+}
+
+form input[type="date"]{
+    border: 1px solid;
+    border-radius:3px;
+    margin-top: 8px;    
+}
+
+/*Botones*/
+form input[type="submit"], form input[type="reset"]{
+	width:46.9%;
+	padding:8px 25px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:inline-block;
+	color:#fff;
+	background:#000;
+    
+} 
+
+form input:hover[type="submit"], form input:hover[type="reset"]{
+    background: #7F7D7D;
+    color: #6FD5CE;
+}
+
+/*Mensaje*/
+textarea{
+	width:93%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin-top:8px;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;/*No permito redimensionar el espacio del texto*/
+	display:block;
+}
+
+form .texto_usuario{
+    margin-top: 8px;
+}
+
+/*TERMINOS Y CONDICIONES*/
+/*Para que ocupe todo el contenedor*/
+.importante{
+    width: 100%;
+}
+span{
+    padding-left: 5px;
+}
+

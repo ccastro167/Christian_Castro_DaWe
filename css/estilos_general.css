@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+}
+
+/*CAJA LOGO*/
+header figure{
+    margin: 0;
+    display: flex;       
+}
+
+header figure img{    
+    padding-top: 2%;
+    width: 27%;
+    padding-left: 34.5%;
+}
+
+/*-----------------------------------------*/
+
+/*CAJA MENU*/
+nav{ /*Conseguimos el menu que se mantenga fijo en el scroll*/
+    width: 100%;/*Para que ocupe acorde a todomi body*/
+    position: sticky;
+    top: 0%; /*Se ha de definir un top para que vuelva*/
+    /*¿     PORQUE? hay que definir la posición para cuando se quede fixed, si no, no funcionará.*/  
+    background-color:white;
+}
+
+nav ul{
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center; NO*/
+    border-top: 1px solid #6FD5CE;
+    border-bottom: 1px solid #6FD5CE;
+
+}
+
+/*LINKS de mi Nav -- MENU (principal)*/
+nav ul li{    
+    list-style: none; /*Quitar los puntos de la lista*/
+    text-transform: uppercase; /*Poner en Mayúsculas*/
+    /*Esten separados arriba, abajo y uno del otro*/
+    padding-right: 1.2%;
+    padding-bottom: 1.4%;
+    padding-top: 1.4%;
+    font-size: 13px;
+}
+
+/*Esten alineados al contenedor de abajo*/
+
+
+/*SUBMENU*/
+/*TODOS los link*/
+nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+
+nav .navi2{
+    display: none;
+    position:absolute;
+	min-width:140px;   
+    background-color: white;
+}
+    
+nav .navi2 li a{
+    color:black;	
+	padding:10px 12px;
+    display: block;
+}
+
+
+/* a:link, a:visited, a:active -- Lo encontré para borrar subrayado*/
+/*Creamos clase en "a" para que despues al realizar acciones solo estemos diciendo a estos enlaces*/
+/*Añadiendo a:visited lo pongo el link de color negro
+.navi:link, .navi:visited{ 
+    color: black;
+    text-decoration:none;     
+}*/
+nav ul li a:hover{  /*Para cuando coloque el raton se cambie al color de abajo*/
+    color: #6FD5CE;
+    
+}
+
+.navi2 li a:hover{
+    color: white;
+    background-color: #6FD5CE ;
+
+}
+nav li:hover > .navi2{
+    display: block;
+}
+
+
+nav ul .navi{
+    padding-left: 30%;
+}
+
+
+/*-----------------------------------------*/
+/*FOOTER*/
+footer{
+    background: black;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center; /*Elementos centrados*/
+    padding:0;
+    /*Para tener mas fondo negro con mi texto*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:2px solid #6FD5CE;
+}
+/*Propiedades párrafos*/
+footer ul li {
+    color: white; /*Color de texto*/
+    text-transform: uppercase; /*Poner en Mayúsculas*/
+    font-size: 14px;
+    /*Esten separados arriba, abajo y uno del otro*/
+    padding-right: 3%;
+    padding-top: 13px;
+    padding-bottom: 15px;    
+    /*Al crear un padding se genera un margin: 10px (TOP y BOTTOM)*/
+    list-style: none;
+}
+
+/*Para alinear mi imagen con el texto del footer*/
+footer ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+/*Creamos clase en "a" para que despues al realizar acciones solo estemos diciendo a estos enlaces*/
+.foot:link, .foot:visited{ /*Añadiendo a:visited lo pongo el link de color negro*/
+    color: white;
+    text-decoration:none;     
+}
+
+.foot:hover{
+    color: #6FD5CE;
+}
+
+/*IMAGENES FOOTER*/
+footer li img{
+    width: 20px;
+    height: 20px;
+}

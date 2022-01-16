@@ -1,0 +1,226 @@
+/*MAIN SIMILAR AL DE RECETAS.CSS*/
+main{
+    width: 80%;
+    background: #D8D8D8;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px; /*Para que haya separación del main con el footer*/
+}
+
+/*Titulo h1*/
+h1{    
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+    -webkit-text-stroke: 1px white;
+    padding-left: 27.5%;
+    color: black;
+    font-size: 40px;
+    font-weight: 800;    
+}
+
+/*Titulo h3*/
+h3{
+    margin: 0;
+}
+/*TODOS los Párrafos*/
+p{
+    width: 70%; /*Cierta anchura*/
+    text-align: justify;     
+}
+
+/*Aside*/
+aside ul{
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6FD5CE;    
+    padding-top: 5px ;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 0;
+    margin-bottom: 10px;
+    /*Para que este junto al contenedor de recetas*/
+    width: 145px;       
+    margin-left: 50px;
+}
+aside ul li{
+    list-style: none; /*Quitar los puntos de la lista*/
+}
+/*SUB_MENÚ*/
+.navi2:link, .navi2:visited{ /*Añadiendo a:visited lo pongo el link de color negro*/    
+    text-decoration:none;     
+}
+
+.navi2:hover{
+    color: #6FD5CE;
+    text-decoration: underline;
+}
+aside ul li{
+    font-size: 13px;
+}
+
+/*Propiedades section*/
+section{
+    padding-left: 20px; 
+}
+
+/*Contenedor descripción*/
+.descripcion img{
+    width: 300px;
+    height: 300px;
+    padding-left: 19%;
+}
+
+/*Contenedor: Ingredientes*/
+.ingredientes {
+    border: 1px solid black;
+    width: 60%; 
+    /*Creo mi caja para poner los ingredientes*/
+}
+
+/*Contenedor info propiedades*/
+.propiedades{
+    /*Le doy una dirección a mi contenedor*/
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+     /*Se separe del contenedor*/
+     padding-left: 15px;/*Para separar mis párrafos de mi contenedor*/
+}
+
+.propiedades p{
+    padding-left: 5px; /*Se separen mis elementos*/
+    font-size: 16px;
+    display: flex;
+    align-items: center; /*Para alinear mi imagen con el texto*/
+    border-left: 1px solid black;
+    /*IMPORTANTE ENCONTRAR DONDE SE DEBE QUITAR EL MARGEN*/
+    margin: 4px; /*Margen arriba y abajo solo*/
+    width: auto; /*Para pegar mis párrafos*/
+}
+/*Mi primer párrafo*/
+.propiedades p:nth-child(1){
+    border: none; /*Quitamos el borde del primer p+arrafo*/
+    padding-left: 0; /*Quitamos el padding generado arriba*/
+}
+
+/*Imagenes p*/
+.propiedades img{
+    width: 30px;
+    height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/*Contenedor: Caracteristicas*/
+.caracteristicas{
+    padding-left: 15px; /*Se separe del contenedor*/
+    border-bottom: 1px solid black;
+    
+}
+.caracteristicas p{
+    width: 100%; /*Se vea en linea todo*/
+    margin: 6px; /*Margen arriba y abajo solo*/
+}
+.caracteristicas a:hover{
+    color:#6FD5CE; /*Cambie de color mi enlace*/
+}
+
+/*Contenedor: Titulo*/
+.titulo{
+    padding-left: 15px; 
+    border-bottom: 1px solid black;
+}
+
+.titulo h3{
+    margin: 8px; /*Margen arriba y abajo solo*/
+}
+
+/*Contenedor: Ingrediente*/
+.ingrediente{
+    padding-left: 18px; 
+    padding-bottom: 8px;    
+}
+
+.ingrediente ul{
+    margin: 0; /*Ya que me crea un margen porque sí*/
+    column-width: auto;
+    column-count: 2; 
+    padding:0;
+}
+.ingrediente ul li{
+    list-style: none; /*Quitar los puntos de la lista*/
+    padding-top: 6px;
+    text-decoration: none;
+}
+/*Ultimo enlace*/
+.ingrediente ul >li:nth-child(13){
+    padding-bottom: 3px; /*Para tener una lista mas ordenada por la izquierda*/
+}
+
+/*Se tachan al selecionar el checbox*/
+input:checked + label { 
+    text-decoration: line-through;
+    /*input:checked -> indico que cuando se seleccionan hagan algo*/
+}
+
+
+/*PARA ACOMPAÑAR*/
+.titulo2{
+    font-style: italic;
+    font-weight: 600;
+}
+
+/*PREPARACIÓN*/
+.preparacion h3{
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+/*Contenedor Paso*/
+.preparacion .paso{
+    display: inline-block; /*Para poder usar el float*/
+    
+}
+/*Parrafo alineado al número Paso*/
+.preparacion .paso p{
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    line-height: 1.4; /*Espaciado entre lineas*/
+}
+
+/*Contenedor número Paso*/
+.preparacion .orden{
+    font-size: 30px;
+    font-weight: 800;
+    padding:0.25em 0.5em;
+    float: left;
+    height: 25px;    
+}
+
+.preparacion img{
+    width: auto;
+    height: auto; 
+    padding-left: 5%;  
+}
+
+/*Extras*/
+
+.extras h3{
+    padding-top: 5px;/*Separacion con el contenedor preparacion*/
+}
+
+.extras p{
+    margin: 0;/*Para eliminar margen que genera automático*/
+    padding-top: 5px; /*Para que se separe uno del otro*/
+}
+
+.extras p+p {
+    padding-bottom: 8px; /*Para que el 2do parrafo se separe del mi contenedor main*/
+}
